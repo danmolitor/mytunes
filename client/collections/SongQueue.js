@@ -24,10 +24,11 @@ var SongQueue = Songs.extend({
             this.remove(this.at(0));
         }, this);
 
-         // this.on('enqueue', function(song) {
-         //     this.add(song);
-         //     //this.render();
-         // }, this);
+          this.on('enqueue', function(song) {
+              if(this.length === 1){
+                this.playFirst();
+              }
+          }, this);
 
     },
 

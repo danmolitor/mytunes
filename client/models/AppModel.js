@@ -26,6 +26,10 @@ var AppModel = Backbone.Model.extend({
             //this.render();
         }, this);
 
+        // this.get('songQueue').on('stop', function(){
+
+        // });
+
     }
 
 });
